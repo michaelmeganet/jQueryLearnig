@@ -8,15 +8,24 @@
             <meta name="viewport" content="width=device-width, initial-scale=1" />
 
             <script type="text/javascript" src="jquery.min.js"></script>
-
-            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+            
+            <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"/>
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
             <style>
                
-                #square{
+                #draggable{
                     
                     width:200px;
                     height: 200px;
-                    background-color: grey;
+                    background-color: green;
+                }
+                
+                 #resizable{
+                    
+                    width:200px;
+                    height: 200px;
+                    background-color: red;
                 }
           
             </style>
@@ -26,13 +35,18 @@
     <body>
         
        
-        <div id="square"></div>
+        <div id="draggable">Drag me arround</div>
+        
+        <div id="resizable">
+            Resize Me!
+        </div>
        
             
         <script>
             
-           $("#square").draggable();
+           $("#draggable").draggable();
             
+           $("#resizable").resizable();
         </script>
             
         
